@@ -1,0 +1,36 @@
+.wp-element-button, .wp-block-button__link {
+	transition: 0.3s ease;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.wp-block-button.is-style-with-arrow .wp-block-button__link,
+.wp-block-button.is-style-outline-with-arrow .wp-block-button__link {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	color: inherit;
+
+	&:hover {
+		
+		&::after {
+			padding-left: 1rem;
+			transition: padding-left 0.3s ease;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin-left: .5rem;
+		background-color: currentColor; /* Esto asegura que el color del SVG coincida con el color del texto */
+		mask-image: url(./assets/icons/arrow-right.svg);
+		mask-size: cover;
+		mask-repeat: no-repeat;
+		transition: padding-left 0.3s ease;
+	}
+
+}

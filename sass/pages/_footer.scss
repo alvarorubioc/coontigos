@@ -1,0 +1,36 @@
+#colophon {
+    ul.footer-nav {
+
+        width: 100%;
+
+        .wp-block-navigation-item.wp-block-navigation-link {
+            width: 100%;
+            border-bottom: 1px solid var(--wp--preset--color--primary-90);
+            padding-bottom: var(--wp--preset--spacing--10);
+
+            .wp-block-navigation-item__content {
+                transition: padding-left .5s ease-in-out;
+                width: 100%;
+            }
+
+            &:hover {
+                .wp-block-navigation-item__content {
+                    padding-left: var(--wp--preset--spacing--10);
+                }
+            }
+        }
+    }
+
+    .wp-block-social-links .wp-social-link {
+
+        a {
+            padding: .5em;
+        }
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+    } 
+}

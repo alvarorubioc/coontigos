@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "coontigos/related-posts",
+  "title": "Posts Relacionados",
+  "category": "widgets",
+  "icon": "admin-links",
+  "description": "Muestra posts relacionados por categoría.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "coontigos",
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}
